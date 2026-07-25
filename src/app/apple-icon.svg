@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" width="180" height="180">
+  <defs>
+    <linearGradient id="nabsGradientApple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00A8FF"/>
+      <stop offset="50%" stop-color="#00E5FF"/>
+      <stop offset="100%" stop-color="#4DC8FF"/>
+    </linearGradient>
+    <linearGradient id="bgGradientApple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D2137"/>
+      <stop offset="100%" stop-color="#0A1628"/>
+    </linearGradient>
+  </defs>
+  
+  <rect x="0" y="0" width="180" height="180" rx="40" fill="url(#bgGradientApple)" stroke="url(#nabsGradientApple)" stroke-width="8"/>
+  <path d="M 50 130 V 50 L 130 130 V 50" fill="none" stroke="url(#nabsGradientApple)" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <defs>
+    <linearGradient id="nabsGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00A8FF"/>
+      <stop offset="50%" stop-color="#00E5FF"/>
+      <stop offset="100%" stop-color="#4DC8FF"/>
+    </linearGradient>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D2137"/>
+      <stop offset="100%" stop-color="#0A1628"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Outer Rounded Background -->
+  <rect x="0" y="0" width="32" height="32" rx="8" fill="url(#bgGradient)" stroke="url(#nabsGradient)" stroke-width="1.5"/>
+  
+  <!-- Bold Stylized N Logo Mark -->
+  <path d="M 9 23 V 9 L 23 23 V 9" fill="none" stroke="url(#nabsGradient)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
