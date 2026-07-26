@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { Sparkles, ArrowRight, ChevronDown } from 'lucide-react';
+import { ArrowRight, ChevronDown } from 'lucide-react';
 import { GlowOrb } from '@/components/shared/glow-orb';
 import { StatItem } from '@/components/shared/stat-item';
 import { TRUST_STATS } from '@/lib/constants';
@@ -12,11 +12,6 @@ export function HeroSection() {
       <GlowOrb className="top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[550px] h-[550px]" />
 
       <div className="max-w-5xl mx-auto text-center flex flex-col items-center justify-center my-auto py-8">
-        {/* Eyebrow Pill Badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#00A8FF]/40 bg-[#00A8FF]/10 text-[#00E5FF] text-xs font-mono font-semibold tracking-wider uppercase mb-8 shadow-lg shadow-[#00A8FF]/10 animate-in fade-in slide-in-from-bottom-3 duration-500">
-          <Sparkles className="w-4 h-4 text-[#00E5FF]" />
-          <span>Facebook & Instagram Ads Specialists</span>
-        </div>
 
         {/* 3-Line Headline */}
         <h1 className="font-poppins text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white tracking-tight leading-[1.1] max-w-4xl">

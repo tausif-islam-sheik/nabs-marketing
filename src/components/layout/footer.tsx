@@ -106,9 +106,10 @@ export function Footer() {
         </div>
 
         {/* Bottom copyright bar */}
-        <div className="mt-12 pt-6 border-t border-[#1A3A5C]/60 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-[#B0BEC5]">
+        <div className="mt-12 pt-6 border-t border-[#1A3A5C]/60 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-[#B0BEC5] pr-20 md:pr-24">
           <p>© {new Date().getFullYear()} NABS Marketing. All Rights Reserved.</p>
           <p className="text-[#00E5FF] font-medium">{BRAND.tagline}</p>
+          <p>Developed by <a href="https://www.facebook.com/tausifislamsheik" target="_blank" rel="noopener noreferrer" className="text-white font-semibold hover:text-[#00A8FF] transition-colors">TAUSIF ISLAM SHEIK</a></p>
         </div>
       </div>
     </footer>

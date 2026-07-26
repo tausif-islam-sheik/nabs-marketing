@@ -7,10 +7,10 @@ export const BRAND = {
   subHeadline: 'High-converting ad campaigns tailored for Restaurants & Clothing Brands in Bangladesh. Data-driven targeting, lower cost per lead, and transparent ROI reporting.',
   whatsappNumber: '8801700000000', // Placeholder until provided
   whatsappUrl: 'https://wa.me/8801700000000?text=Hi%20NABS%20Marketing%2C%20I%20want%20to%20get%20a%20free%20consultation%20for%20my%20business.',
-  email: 'hello@nabsmarketing.bd',
+  email: 'nabsmarketingagency@gmail.com',
   phone: '+880 1700-000000',
-  instagram: '@nabsmarketing.bd',
-  instagramUrl: 'https://instagram.com/nabsmarketing.bd',
+  instagram: '@nabs_ads',
+  instagramUrl: 'https://instagram.com/nabs_ads',
   businessHours: 'Saturday – Thursday: 9:00 AM – 9:00 PM (Bangladesh Time)',
   founderName: 'Sojib',
   founderRole: 'Founder & Lead Performance Marketer',
