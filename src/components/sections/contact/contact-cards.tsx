@@ -26,48 +26,48 @@ export function ContactCards() {
         <span>Fastest Response Option</span>
       </div>
 
-      {/* WhatsApp CTA Card (Largest element, WhatsApp green) */}
+      {/* WhatsApp CTA Card (Rich Dark-Emerald Gradient & Glow) */}
       <a
         href={BRAND.whatsappUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="block p-7 rounded-card bg-[#25D366] text-white hover:bg-[#20ba59] transition-all duration-300 shadow-2xl shadow-[#25D366]/30 glow-hover group"
+        className="block p-7 rounded-card bg-gradient-to-br from-[#062E1B] via-[#0A472A] to-[#041F12] border-2 border-[#25D366]/50 hover:border-[#25D366] text-white transition-all duration-300 shadow-xl shadow-[#25D366]/20 hover:shadow-2xl hover:shadow-[#25D366]/40 glow-hover group relative overflow-hidden"
       >
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between relative z-10">
           <div className="flex items-center gap-4">
-            <div className="p-3 rounded-2xl bg-white/20 text-white">
+            <div className="p-3.5 rounded-2xl bg-[#25D366]/20 border border-[#25D366]/40 text-[#25D366] group-hover:scale-105 transition-transform">
               <WhatsAppIcon className="w-8 h-8" />
             </div>
             <div>
-              <span className="text-xs font-mono uppercase tracking-widest text-white/80 font-bold">
+              <span className="text-xs font-mono uppercase tracking-widest text-[#25D366] font-bold">
                 Instant Chat
               </span>
-              <h4 className="font-poppins text-xl font-extrabold text-white">
+              <h4 className="font-poppins text-xl sm:text-2xl font-extrabold text-white">
                 Chat on WhatsApp
               </h4>
             </div>
           </div>
-          <ArrowRight className="w-6 h-6 transform group-hover:translate-x-2 transition-transform" />
+          <ArrowRight className="w-6 h-6 text-[#25D366] transform group-hover:translate-x-2 transition-transform" />
         </div>
-        <p className="mt-4 text-xs font-sans text-white/90">
+        <p className="mt-4 text-xs font-sans text-[#B0BEC5] leading-relaxed relative z-10">
           Replies usually within 1 hour during business hours • Direct line to Founder Sojib
         </p>
       </a>
 
-      {/* Instagram DM Card (Instagram Gradient) */}
+      {/* Instagram DM Card (Deep Luxury Violet-Rose Gradient & Glow) */}
       <a
         href={BRAND.instagramUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="block p-6 rounded-card bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 text-white transition-all duration-300 shadow-xl glow-hover group"
+        className="block p-6 rounded-card bg-gradient-to-br from-[#2D0B3D] via-[#4A0E35] to-[#1E0729] border-2 border-[#E1306C]/50 hover:border-[#E1306C] text-white transition-all duration-300 shadow-xl shadow-[#E1306C]/20 hover:shadow-2xl hover:shadow-[#E1306C]/40 glow-hover group relative overflow-hidden"
       >
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between relative z-10">
           <div className="flex items-center gap-4">
-            <div className="p-3 rounded-2xl bg-white/20 text-white">
+            <div className="p-3 rounded-2xl bg-[#E1306C]/20 border border-[#E1306C]/40 text-[#FF4081] group-hover:scale-105 transition-transform">
               <InstagramIcon className="w-7 h-7" />
             </div>
             <div>
-              <span className="text-xs font-mono uppercase tracking-widest text-white/80 font-bold">
+              <span className="text-xs font-mono uppercase tracking-widest text-[#FF4081] font-bold">
                 Social DM
               </span>
               <h4 className="font-poppins text-lg font-bold text-white">
@@ -75,27 +75,29 @@ export function ContactCards() {
               </h4>
             </div>
           </div>
-          <ArrowRight className="w-5 h-5 transform group-hover:translate-x-1.5 transition-transform" />
+          <ArrowRight className="w-5 h-5 text-[#FF4081] transform group-hover:translate-x-1.5 transition-transform" />
         </div>
-        <p className="mt-3 text-xs text-white/90">
+        <p className="mt-3 text-xs text-[#B0BEC5] relative z-10">
           {BRAND.instagram} • View our latest client ad previews
         </p>
       </a>
 
-      {/* Email & Phone Cards Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      {/* Email & Phone Cards Stack (1 Column) */}
+      <div className="grid grid-cols-1 gap-4">
         {/* Email Card */}
         <a
           href={`mailto:${BRAND.email}`}
           className="p-5 rounded-card bg-[#0D2137]/90 border border-[#1A3A5C] hover:border-[#00A8FF] transition-all text-white glow-hover"
         >
-          <div className="flex items-center gap-3">
-            <div className="p-2.5 rounded-btn bg-[#00A8FF]/10 text-[#00A8FF]">
+          <div className="flex items-center gap-4">
+            <div className="p-3 rounded-btn bg-[#00A8FF]/10 text-[#00A8FF] shrink-0">
               <Mail className="w-5 h-5" />
             </div>
             <div>
-              <span className="text-[10px] font-mono text-[#B0BEC5] uppercase tracking-wider block">Email Us</span>
-              <span className="text-xs font-poppins font-bold text-white truncate block">{BRAND.email}</span>
+              <span className="text-xs font-mono text-[#B0BEC5] uppercase tracking-wider block">Email Us</span>
+              <span className="text-sm sm:text-base font-poppins font-bold text-white block">
+                {BRAND.email}
+              </span>
             </div>
           </div>
         </a>
@@ -105,13 +107,15 @@ export function ContactCards() {
           href={`tel:${BRAND.phone}`}
           className="p-5 rounded-card bg-[#0D2137]/90 border border-[#1A3A5C] hover:border-[#00A8FF] transition-all text-white glow-hover"
         >
-          <div className="flex items-center gap-3">
-            <div className="p-2.5 rounded-btn bg-[#00E5FF]/10 text-[#00E5FF]">
+          <div className="flex items-center gap-4">
+            <div className="p-3 rounded-btn bg-[#00E5FF]/10 text-[#00E5FF] shrink-0">
               <Phone className="w-5 h-5" />
             </div>
             <div>
-              <span className="text-[10px] font-mono text-[#B0BEC5] uppercase tracking-wider block">Call Direct</span>
-              <span className="text-xs font-poppins font-bold text-white truncate block">{BRAND.phone}</span>
+              <span className="text-xs font-mono text-[#B0BEC5] uppercase tracking-wider block">Call Direct</span>
+              <span className="text-sm sm:text-base font-poppins font-bold text-white block">
+                {BRAND.phone}
+              </span>
             </div>
           </div>
         </a>

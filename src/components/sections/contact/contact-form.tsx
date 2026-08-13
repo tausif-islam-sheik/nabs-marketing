@@ -174,7 +174,7 @@ export function ContactForm() {
           <input
             id="phone"
             type="tel"
-            placeholder="01700000000"
+            placeholder="01616696502"
             {...register('phone')}
             className="w-full px-4 py-3 rounded-input bg-[#071020] border border-[#1A3A5C] text-white placeholder-[#B0BEC5]/50 text-sm focus:outline-none focus:border-[#00A8FF] transition-colors"
           />

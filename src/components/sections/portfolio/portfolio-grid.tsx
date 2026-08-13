@@ -55,18 +55,33 @@ export function PortfolioGrid() {
             <Reveal key={item.id} delay={idx * 0.1}>
               {/* Note for Sojib: isSampleData = true indicating placeholder case study */}
               <div className="h-full flex flex-col justify-between rounded-card bg-[#0D2137]/80 border border-[#1A3A5C] hover:border-[#00A8FF] transition-all duration-300 overflow-hidden glow-hover group">
-                {/* Visual Header Block (No stock face photos used) */}
-                <div className={`w-full h-44 bg-gradient-to-br ${bgGradient} flex flex-col items-center justify-center p-6 border-b border-[#1A3A5C] relative`}>
-                  <div className="p-4 rounded-2xl bg-[#071020]/80 text-[#00E5FF] border border-[#00A8FF]/30 group-hover:scale-110 transition-transform duration-300 shadow-xl">
-                    <Icon className="w-10 h-10" />
-                  </div>
-                  <span className="mt-3 text-xs font-mono text-[#00E5FF] uppercase tracking-widest font-semibold">
+                {/* Visual Header Block */}
+                <div className="w-full h-64 bg-[#071020] border-b border-[#1A3A5C] relative overflow-hidden flex items-center justify-center">
+                  {item.image ? (
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                    />
+                  ) : (
+                    <div className={`w-full h-full bg-gradient-to-br ${bgGradient} flex flex-col items-center justify-center p-6 relative`}>
+                      <div className="p-4 rounded-2xl bg-[#071020]/80 text-[#00E5FF] border border-[#00A8FF]/30 group-hover:scale-110 transition-transform duration-300 shadow-xl">
+                        <Icon className="w-10 h-10" />
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Gradient Overlay for Tag Clarity */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0D2137] via-transparent to-black/30 pointer-events-none" />
+
+                  {/* Category Label */}
+                  <span className="absolute bottom-3 left-4 px-3 py-1 rounded-full bg-[#071020]/90 text-[#00E5FF] font-mono text-[11px] font-bold border border-[#00E5FF]/30 backdrop-blur-sm">
                     {item.categoryLabel}
                   </span>
 
                   {/* Sample Data Indicator Tag */}
                   {item.isSampleData && (
-                    <span className="absolute top-3 right-3 px-2.5 py-1 rounded bg-[#071020]/90 text-[#FFD600] font-mono text-[10px] font-bold border border-[#FFD600]/30">
+                    <span className="absolute top-3 right-3 px-2.5 py-1 rounded bg-[#071020]/90 text-[#FFD600] font-mono text-[10px] font-bold border border-[#FFD600]/30 backdrop-blur-sm">
                       Sample Case Study
                     </span>
                   )}

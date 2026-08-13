@@ -6,8 +6,10 @@ export interface NavLink {
 export interface PricingTier {
   id: string;
   name: string;
+  subtitle?: string;
   price: string;
   period: string;
+  minAdSpend?: string;
   description: string;
   isPopular?: boolean;
   features: string[];
@@ -40,6 +42,7 @@ export interface PortfolioItem {
   adSpend: string;
   description: string;
   isSampleData: boolean;
+  image?: string;
 }
 
 export interface AdSample {
@@ -50,6 +53,7 @@ export interface AdSample {
   tag: string;
   gradient: string;
   icon: string;
+  image?: string;
 }
 
 export interface TrustBadge {
