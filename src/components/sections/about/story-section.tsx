@@ -28,7 +28,7 @@ export function StorySection() {
         <div className="lg:col-span-5 flex justify-center">
           <Reveal delay={0.2}>
             <div className="relative p-12 rounded-2xl bg-[#0D2137]/90 border border-[#1A3A5C] flex flex-col items-center justify-center text-center shadow-2xl shadow-[#00A8FF]/20 group">
-              <div className="filter drop-shadow-[0_0_25px_rgba(0,168,255,0.6)] group-hover:scale-105 transition-transform duration-300">
+              <div className="group-hover:scale-105 transition-transform duration-300">
                 <Logo variant="full" className="scale-125 my-4" />
               </div>
               <p className="mt-6 text-xs font-mono text-[#00E5FF] uppercase tracking-widest font-semibold">

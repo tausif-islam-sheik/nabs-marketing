@@ -39,12 +39,25 @@ export const metadata: Metadata = {
   creator: 'NABS Marketing',
   publisher: 'NABS Marketing',
   metadataBase: new URL('https://nabsmarketing.com'),
+  icons: {
+    icon: '/nabs-logo.jpg',
+    shortcut: '/nabs-logo.jpg',
+    apple: '/nabs-logo.jpg',
+  },
   openGraph: {
     title: 'NABS Marketing – Facebook & Instagram Ads Agency Bangladesh',
     description:
       'We turn your Facebook & Instagram ads into real customers. High-converting performance marketing for Restaurants and Clothing Brands.',
     url: 'https://nabsmarketing.com',
     siteName: 'NABS Marketing',
+    images: [
+      {
+        url: '/nabs-logo.jpg',
+        width: 1024,
+        height: 1024,
+        alt: 'NABS Marketing Logo',
+      },
+    ],
     locale: 'en_US',
     type: 'website',
   },
